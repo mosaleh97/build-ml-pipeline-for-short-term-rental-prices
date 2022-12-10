@@ -12,7 +12,7 @@ from wandb_utils.log_artifact import log_artifact
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)-15s %(message)s")
 logger = logging.getLogger()
-
+ 
 
 def go(args):
 
@@ -29,7 +29,8 @@ def go(args):
         run,
     )
 
-
+#wandb.log_arifact takes the following arguments: artifact_name, artifact_type, artifact_description, artifact_path, run
+wandb.log_artifact
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Download URL to a local destination")
 
